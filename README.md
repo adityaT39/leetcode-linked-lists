@@ -20,6 +20,7 @@ answer).
 | [2807](2807-insert-greatest-common-divisors-in-linked-list) | Insert Greatest Common Divisors in Linked List | Passed |
 | [21](0021-merge-two-sorted-lists) | Merge Two Sorted Lists | Worked through, not re-verified |
 | [2877](2877-create-a-dataframe-from-list) | Create a DataFrame from List (pandas, not a linked list) | Passed |
+| [817](0817-linked-list-components) | Linked List Components | Passed |
 
 ## Recurring techniques across these problems
 
@@ -44,3 +45,7 @@ answer).
   counter) on some code paths but not others.
 - Forgetting to advance *every* pointer that needs to move each loop
   iteration, not just some of them.
+- Bundling two separate questions into one `if` condition when tracking
+  state (e.g. "is this value relevant" *and* "is this a new streak") — the
+  combined condition goes false for the wrong reason and silently resets
+  state that should have stayed put (817).
